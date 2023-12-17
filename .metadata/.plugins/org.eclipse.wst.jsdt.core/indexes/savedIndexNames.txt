@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+/home/bonami/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+25981260.index
+4160852252.index
+1108751073.index
+1127523359.index
+32603319.index
+897967648.index
+1403364078.index
+565736086.index

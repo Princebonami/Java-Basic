@@ -1,0 +1,28 @@
+package Static_And_Final_Keyword;
+
+import java.util.LinkedHashSet;
+
+public class Program1 {
+
+	public static void main(String[] args) {
+		LinkedHashSet<Integer> hs1=new LinkedHashSet<Integer>();
+		
+		hs1.add(23);
+		hs1.add(56);
+		hs1.add(45);
+		hs1.add(65);
+		hs1.add(78);
+		hs1.add(90);
+		hs1.add(34);
+		hs1.add(21);
+		hs1.add(89);
+		hs1.add(76);
+		
+		for(Integer x:hs1)
+		{
+			System.out.print(x+" ");
+		}
+
+	}
+
+}

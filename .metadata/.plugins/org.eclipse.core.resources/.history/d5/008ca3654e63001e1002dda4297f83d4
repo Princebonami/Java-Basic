@@ -1,0 +1,28 @@
+package Static_And_Final_Keyword;
+
+public class Shirt {
+	
+	String color;
+	int size;
+	double price;
+	String brand_name;
+	
+	Shirt()
+	{
+		
+	}
+	Shirt(String color,int size,double price,String brand_name)
+	{
+		this.color=color;
+		this.size=size;
+		this.price=price;
+		this.brand_name=brand_name;
+	}
+	
+	@Override
+	public String toString() {
+		
+		return "color ="+color+", size="+size+", price="+price+", brane_name="+brand_name;
+	}
+
+}

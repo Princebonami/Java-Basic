@@ -1,0 +1,65 @@
+package Static_And_Final_Keyword;
+
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class ShirtDriver {
+
+	public static void main(String[] args) {
+		HashSet<Shirt> hs1=new HashSet<Shirt>();
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number of shirts you want to enter :");
+		int num=sc.nextInt();
+		
+		for(int i=1;i<=num;i++)
+		{
+			sc.nextLine();
+			System.out.println("Enter the details of "+i+" shirt :");
+			System.out.println("=======================================");
+			System.out.println("Enter the color of shirt :");
+			String color=sc.nextLine();
+			System.out.println("Enter the size of shirt :");
+			int size=sc.nextInt();
+			System.out.println("Enter the price of shirt :");
+			double price=sc.nextDouble();
+			sc.nextLine();
+			System.out.println("Enter the brand_name of shirt :");
+			String brand_name=sc.nextLine();
+			hs1.add(new Shirt(color,size,price,brand_name));
+		}
+		System.out.println("All shirt details are :");
+		for(Shirt x:hs1)
+		{
+			System.out.println(x);
+		}
+		
+		System.out.println("All the shirt of blue color :");
+		for(Shirt x :hs1)
+		{
+			if(x.color.equals("Blue"))
+			{
+				System.out.println(x);
+			}
+		}
+		
+		System.out.println("All the shirt of price range 2500-4000 :");
+		for(Shirt x:hs1)
+		{
+			if(x.price>=2500 && x.price<=4000)
+			{
+				System.out.println(x);
+			}
+		}
+		System.out.println("All the shirts of 42 size and Arrow brand :");
+		for(Shirt x:hs1)
+		{
+			if(x.size==42 && x.brand_name.equals("Arrow"))
+			{
+				System.out.println(x);
+			}
+		}
+
+	}
+
+}

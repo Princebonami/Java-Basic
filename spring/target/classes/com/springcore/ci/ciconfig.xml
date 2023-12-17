@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context" 
+ xmlns:p="http://www.springframework.org/schema/p" 
+ xmlns:c="http://www.springframework.org/schema/c" 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <bean class="com.springcore.ci.Certi" name="certi" c:name="Hello World"   />
+ 
+ <bean class="com.springcore.ci.Person" name="person1" c:name="prince" c:personId="12">
+      <constructor-arg ref="certi" />
+      <constructor-arg >
+            <list>
+                <value>Prince</value>
+                <value>sakshi</value>
+            
+            </list>
+      
+      </constructor-arg>
+ 	
+</bean>
+
+<bean class="com.springcore.ci.Addition" name="addition">
+
+    <constructor-arg>
+         <value>10</value>
+      </constructor-arg>
+      <constructor-arg>
+         <value>20</value>
+      </constructor-arg>
+
+</bean>
+     
+ </beans>

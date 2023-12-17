@@ -1,0 +1,31 @@
+ package com.springcore.lifecycle;
+
+public class Pepsi {
+	
+	private double price;
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public Pepsi(double price) {
+		super();
+		this.price = price;
+	}
+
+	public Pepsi() {
+		super();
+	}
+
+	@Override
+	public String toString() {
+		return "Pepsi [price=" + price + "]";
+	}
+	
+	
+
+}

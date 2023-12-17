@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context" 
+ xmlns:p="http://www.springframework.org/schema/p" 
+ xmlns:c="http://www.springframework.org/schema/c" 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+                    http://www.springframework.org/schema/context 
+                    http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+                    
+  <bean  class="CollectionAndREfrenceDependency.Address" name="address" c:city="Barauni" c:state="Bihar"/>
+  <bean  class="CollectionAndREfrenceDependency.Student" name="student" c:id="1" c:name="Prince kumar" c:address-ref="address">
+          <constructor-arg name="courses">
+             <list>
+                <value>Math</value>
+                <value>Science</value>
+                <value>Physics</value>
+             </list>
+          </constructor-arg>
+          <constructor-arg name="hobbies">
+              <set>
+                 <value>Playing computer games</value>
+                 <value>Reading books</value>
+                 <value>Coding</value>              
+              </set>
+          </constructor-arg>
+          <constructor-arg name="games">
+               <map>
+                  <entry key="1" value="Football"/>
+                  <entry key="2" value="Basketball"/>
+                  <entry key="3" value="Kabaddi"/>
+               </map>
+          </constructor-arg>
+          <constructor-arg name="prop">
+               <props>
+                  <prop key="name">Prince kumar</prop>
+                  <prop key="channel name"> My channel is java</prop>
+               </props>
+          </constructor-arg>
+          
+  </bean>
+  
+                    
+                    
+                    
+ </beans>

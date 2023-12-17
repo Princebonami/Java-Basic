@@ -1,0 +1,30 @@
+package Static_And_Final_Keyword;
+
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class Program1 {
+
+	public static void main(String[] args) {
+	    TreeSet<Integer> hs1=new TreeSet<Integer>();
+		
+		hs1.add(23);
+		hs1.add(56);
+		hs1.add(45);
+		hs1.add(65);
+		hs1.add(78);
+		hs1.add(90);
+		hs1.add(34);
+		hs1.add(21);
+		hs1.add(89);
+		hs1.add(76);
+		
+		Iterator i1=hs1.iterator();
+		
+		while(i1.hasNext())
+		{
+			System.out.print(i1.next()+" ");
+		}
+	}
+
+}

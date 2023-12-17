@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context" 
+ xmlns:p="http://www.springframework.org/schema/p" 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+    <bean name="employee1" class="com.springcore.collections.Employees">
+        <property name="name" value="Prince" />
+        <property name="phones"> 
+             <list>
+                  <value>123</value>
+                  <value>1234</value>
+                  <value>12345</value>
+                  <value>123456</value>
+                  <null/>
+             </list>
+                       
+        </property>
+        <property name="address">
+              <set>
+                  <value>Bihar</value>
+                  <value>Patna</value>
+                  <value>chandigarh</value>
+                  <value>Lucknow</value>
+              
+              </set>
+        
+        </property>  
+        
+        <property name="courses">
+             <map>
+                <entry key="1" value="Computer"/>
+                <entry key="2" value="Math"/>
+                <entry key="3" value="English"/>
+             </map>
+        
+        
+        </property>  
+    
+    </bean>
+ 
+ 
+ </beans>

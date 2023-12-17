@@ -1,0 +1,5 @@
+package com.springcore.auro.wire;
+
+public class Address {
+
+}

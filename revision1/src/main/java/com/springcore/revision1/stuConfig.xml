@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context" 
+ xmlns:p="http://www.springframework.org/schema/p" 
+ xmlns:c="http://www.springframework.org/schema/c" 
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+                    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+                    http://www.springframework.org/schema/context 
+                    http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+                    
+   <bean class="com.springcore.revision1.Address" name="address">
+          <constructor-arg name="street">
+                <value>Gali no 12</value>
+          </constructor-arg>
+          <constructor-arg name="city">
+                <value>Barauni</value>
+          </constructor-arg>
+          <constructor-arg name="state">
+                 <value>Bihar</value>
+          </constructor-arg>
+    </bean>
+                    
+   <bean class="com.springcore.revision1.Student" name="student">
+           <constructor-arg name="id">
+                 <value>1</value>
+           </constructor-arg>
+           <constructor-arg name="name">
+                 <value>Piyush Singh</value>
+           </constructor-arg>
+           <constructor-arg name="address">
+                  <ref bean="address" />
+           </constructor-arg>
+   </bean>                 
+                    
+                    
+ </beans>

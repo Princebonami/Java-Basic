@@ -1,0 +1,5 @@
+package springmvcrevision.controller;
+
+public class HomeController {
+
+}
